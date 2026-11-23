@@ -2,7 +2,7 @@
 export const config = Object.freeze({
   DEMO_MODE: true,
   // TODO(BACKEND): Set the HTTPS API URL and turn demo off AFTER the server is ready.
-  API_URL: '',
+  API_URL: "",
   // TODO(CONTACTS): Replace with owner's confirmed phone, email and messenger URL.
   contacts: { phone: null, email: null, messengerUrl: null },
   // TODO(PRICING): Educational tariffs for the demo, NOT the company's approved price list.
