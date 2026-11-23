@@ -1,34 +1,45 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-design="industrial-photo">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#182b3a" />
+    <meta name="theme-color" content="#171f23" />
     <meta
       name="description"
-      content="БУРКРАС — алмазное бурение и резка бетона, усиление проёмов и демонтаж в Красноярске. Узнайте, что влияет на стоимость, и опишите свою задачу."
+      content="БУРКРАС — алмазное бурение, резка бетона, усиление проёмов и демонтаж в Красноярске. Предварительный расчёт и понятный порядок работ."
     />
     <meta name="robots" content="noindex, nofollow" />
-    <!-- TODO(LAUNCH): Allow indexing after real contacts, prices and legal documents are approved. -->
+    <!-- TODO(LAUNCH): Approve contacts, pricing and legal documents before indexing. -->
     <meta
       property="og:title"
-      content="БУРКРАС — точная работа с бетоном в Красноярске"
+      content="БУРКРАС — алмазная работа с бетоном в Красноярске"
     />
     <meta
       property="og:description"
-      content="Бурение, резка, усиление проёмов и демонтаж. Демонстрационная версия сайта."
+      content="Бурение. Резка. Усиление. Демонтаж. Демонстрационный сайт."
     />
     <meta property="og:type" content="website" />
-    <title>БУРКРАС — алмазное бурение, резка и демонтаж в Красноярске</title>
-    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <meta
+      property="og:image"
+      content="https://sigabu.github.io/BURKRAS/assets/photos/drilling-hero.webp"
+    />
+    <title>БУРКРАС — алмазное бурение и резка бетона в Красноярске</title>
+    <link rel="icon" href="./assets/logo.svg?v=2" type="image/svg+xml" />
     <link
       rel="preload"
-      href="./assets/fonts/golos-regular.ttf"
+      href="./assets/fonts/oswald-variable.ttf"
       as="font"
       type="font/ttf"
       crossorigin
     />
-    <link rel="stylesheet" href="./assets/styles.css" />
+    <link
+      rel="preload"
+      href="./assets/fonts/onest-variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./assets/styles.css?v=2" />
     <script type="module" src="./assets/app.js"></script>
   </head>
   <body>
@@ -57,23 +68,23 @@
         </symbol>
       </defs>
     </svg>
-
     <header class="header">
       <div class="container header-inner">
         <a class="brand" href="#" aria-label="БУРКРАС — на главную"
-          ><img src="./assets/logo.svg" width="44" height="44" alt="" /><span
+          ><img src="./assets/logo.svg?v=2" width="44" height="44" alt="" /><span
             class="brand-name"
-            >БУРКРАС<span class="brand-descriptor"
-              >Точная работа с бетоном</span
-            ></span
+            >БУРКРАС</span
           ></a
         >
         <nav class="desktop-nav" aria-label="Основная навигация">
-          <a href="#services">Услуги</a><a href="#estimate">Расчёт стоимости</a
+          <a href="#services">Услуги</a><a href="#estimate">Стоимость</a
           ><a href="#process">Как работаем</a><a href="#contact">Контакты</a>
         </nav>
-        <button class="button button-dark header-cta" data-callback>
-          Обсудить задачу<svg class="icon"><use href="#i-diagonal" /></svg>
+        <span class="header-city"><span></span>Красноярск</span>
+        <button class="button button-outline header-cta" data-callback>
+          Обсудить задачу<svg class="icon" aria-hidden="true">
+            <use href="#i-diagonal" />
+          </svg>
         </button>
         <button
           class="menu-toggle"
@@ -90,202 +101,154 @@
         aria-label="Мобильная навигация"
         hidden
       >
-        <a href="#services">Услуги</a><a href="#estimate">Расчёт стоимости</a
+        <a href="#services">Услуги</a><a href="#estimate">Стоимость</a
         ><a href="#process">Как работаем</a><a href="#contact">Контакты</a
-        ><button class="button button-dark" data-callback>
-          Обсудить задачу
-        </button>
+        ><button class="button button-orange" data-callback>
+          Обсудить задачу</button
+        ><span>Красноярск, все районы</span>
       </nav>
     </header>
 
     <main id="main">
-      <section class="hero container" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="location">
-            <svg class="icon"><use href="#i-pin" /></svg>Красноярск
-            <span class="location-separator"></span> Все районы города
-          </p>
-          <h1 id="hero-title">
-            Алмазное бурение<br />и резка бетона<br />в Красноярске
-          </h1>
-          <p class="hero-description">
-            От отверстия под вентиляцию до нового проёма. Бурим, режем,
-            усиливаем и демонтируем — с вниманием к вашему объекту.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-orange" href="#estimate"
-              >Рассчитать стоимость<svg class="icon">
-                <use href="#i-arrow" /></svg></a
-            ><a class="text-link" href="#services"
-              >Выбрать услугу<svg class="icon"><use href="#i-diagonal" /></svg
-            ></a>
-          </div>
-          <div class="hero-materials">
-            <span>Работаем с материалом</span>
-            <p>Бетон <span>/</span> Железобетон <span>/</span> Кирпич</p>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="visual-topline">
-            <span class="visual-heading">Технология точного среза</span
-            ><span class="demo-tag">Демо</span>
-          </div>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-photo">
           <img
-            class="hero-art"
-            src="./assets/hero-concrete.svg"
-            width="640"
-            height="640"
-            alt="Объёмная схема бетонного блока: круглое отверстие, извлечённый керн и ровная линия алмазного реза"
+            src="./assets/photos/drilling-hero.webp"
+            width="1280"
+            height="903"
+            alt="Демонстрационная фотография работы с алмазной бурильной установкой"
+            fetchpriority="high"
           />
-          <div class="visual-bottomline">
-            <span class="small-brand-mark">БК</span
-            ><span>Прочный материал.<br />Продуманное решение.</span
-            ><span class="visual-cross" aria-hidden="true">+</span>
+        </div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="hero-location">
+              <span class="location-dot"></span>Красноярск. Работаем на обоих
+              берегах.
+            </p>
+            <h1 id="hero-title">Алмазное<br />бурение<br />и резка бетона</h1>
+            <p class="hero-description">
+              От отверстия под коммуникации до нового проёма. Согласуем задачу,
+              размеры и условия до начала работ.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-orange" href="#estimate"
+                >Рассчитать стоимость<svg class="icon" aria-hidden="true">
+                  <use href="#i-arrow" /></svg></a
+              ><a class="hero-secondary" href="#services"
+                >Посмотреть услуги<svg class="icon" aria-hidden="true">
+                  <use href="#i-diagonal" /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="hero-side-note" aria-hidden="true">
+            <span>Бетон</span><span>Железобетон</span><span>Кирпич</span>
+          </div>
+          <div class="hero-bottom">
+            <p>Одна команда.<br />Четыре направления.</p>
+            <a href="#services"
+              >Бурение<svg class="icon" aria-hidden="true">
+                <use href="#i-diagonal" /></svg></a
+            ><a href="#services"
+              >Резка<svg class="icon" aria-hidden="true">
+                <use href="#i-diagonal" /></svg></a
+            ><a href="#services"
+              >Усиление<svg class="icon" aria-hidden="true">
+                <use href="#i-diagonal" /></svg></a
+            ><a href="#services"
+              >Демонтаж<svg class="icon" aria-hidden="true">
+                <use href="#i-diagonal" /></svg
+            ></a>
           </div>
         </div>
       </section>
 
-      <div class="principles container">
-        <div>
-          <span class="principle-icon" aria-hidden="true">⌖</span>
-          <p>
-            <strong>По вашим размерам</strong
-            ><span>Сначала задача и разметка, потом работа</span>
-          </p>
-        </div>
-        <div>
-          <svg class="icon"><use href="#i-chat" /></svg>
-          <p>
-            <strong>Понятная стоимость</strong
-            ><span>Объём и условия обсуждаем заранее</span>
-          </p>
-        </div>
-        <div>
-          <svg class="icon"><use href="#i-check" /></svg>
-          <p>
-            <strong>Внимание к объекту</strong
-            ><span>Подготовка, защита зоны и порядок</span>
-          </p>
-        </div>
-      </div>
-
       <section
         id="services"
-        class="section container"
+        class="section services-section container"
         aria-labelledby="services-title"
       >
         <div class="section-heading">
-          <h2 id="services-title">Четыре услуги.<br />Одна команда.</h2>
+          <div>
+            <p class="eyebrow">Что мы делаем</p>
+            <h2 id="services-title">Для ваших задач.<br />Для прочных стен.</h2>
+          </div>
           <p>
-            Для ремонта квартиры, инженерных коммуникаций и подготовки
-            коммерческого помещения.
+            Квартира, дом или коммерческое помещение.<br />Подбираем способ
+            работы под конструкцию.
           </p>
         </div>
-        <div class="service-grid">
-          <article class="service-card">
-            <div class="service-image">
-              <img
-                src="./assets/service-drilling.svg"
-                width="300"
-                height="160"
-                alt="Схема круглого отверстия в бетонной стене"
-                loading="lazy"
-              />
-            </div>
-            <h3>Алмазное бурение</h3>
-            <p>
-              Отверстия под вентиляцию, трубы, кабели и другие коммуникации.
-            </p>
-            <div class="service-tags">
-              <span>Стены</span><span>Перекрытия</span>
-            </div>
-            <button class="service-more" data-service="drilling">
-              Подробнее об услуге<svg class="icon">
-                <use href="#i-diagonal" />
-              </svg>
+        <div class="services-layout">
+          <div class="service-list">
+            <button class="service-row" data-service="drilling">
+              <span
+                ><strong>Алмазное бурение</strong
+                ><span
+                  >Отверстия под вентиляцию, трубы и кабельные трассы.</span
+                ></span
+              ><span class="service-arrow"
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#i-diagonal" /></svg
+              ></span>
             </button>
-          </article>
-          <article class="service-card">
-            <div class="service-image">
-              <img
-                src="./assets/service-cutting.svg"
-                width="300"
-                height="160"
-                alt="Схема ровного прямоугольного реза"
-                loading="lazy"
-              />
-            </div>
-            <h3>Алмазная резка</h3>
-            <p>
-              Новые дверные и оконные проёмы, расширение существующих, резка
-              бетона.
-            </p>
-            <div class="service-tags">
-              <span>Проёмы</span><span>Конструкции</span>
-            </div>
-            <button class="service-more" data-service="cutting">
-              Подробнее об услуге<svg class="icon">
-                <use href="#i-diagonal" />
-              </svg>
+            <button class="service-row" data-service="cutting">
+              <span
+                ><strong>Алмазная резка</strong
+                ><span
+                  >Новые проёмы, расширение существующих и резка
+                  конструкций.</span
+                ></span
+              ><span class="service-arrow"
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#i-diagonal" /></svg
+              ></span>
             </button>
-          </article>
-          <article class="service-card">
-            <div class="service-image">
-              <img
-                src="./assets/service-reinforcement.svg"
-                width="300"
-                height="160"
-                alt="Схема проёма с металлическим усилением"
-                loading="lazy"
-              />
-            </div>
-            <h3>Усиление проёмов</h3>
-            <p>
-              Металлическое обрамление проёмов по проекту для сохранения
-              прочности конструкции.
-            </p>
-            <div class="service-tags">
-              <span>По проекту</span><span>Металлоконструкции</span>
-            </div>
-            <button class="service-more" data-service="reinforcement">
-              Подробнее об услуге<svg class="icon">
-                <use href="#i-diagonal" />
-              </svg>
+            <button class="service-row" data-service="reinforcement">
+              <span
+                ><strong>Усиление проёмов</strong
+                ><span
+                  >Металлическое обрамление и монтаж по проектному
+                  решению.</span
+                ></span
+              ><span class="service-arrow"
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#i-diagonal" /></svg
+              ></span>
             </button>
-          </article>
-          <article class="service-card">
-            <div class="service-image">
-              <img
-                src="./assets/service-demolition.svg"
-                width="300"
-                height="160"
-                alt="Схема поэтапного разбора бетонной конструкции"
-                loading="lazy"
-              />
-            </div>
-            <h3>Демонтаж</h3>
-            <p>
-              Разбор перегородок, санкабин и бетонных элементов с учётом условий
-              объекта.
-            </p>
-            <div class="service-tags">
-              <span>Перегородки</span><span>Санкабины</span>
-            </div>
-            <button class="service-more" data-service="demolition">
-              Подробнее об услуге<svg class="icon">
-                <use href="#i-diagonal" />
-              </svg>
+            <button class="service-row" data-service="demolition">
+              <span
+                ><strong>Демонтаж</strong
+                ><span
+                  >Перегородки, санкабины и бетонные элементы перед
+                  ремонтом.</span
+                ></span
+              ><span class="service-arrow"
+                ><svg class="icon" aria-hidden="true">
+                  <use href="#i-diagonal" /></svg
+              ></span>
             </button>
-          </article>
-        </div>
-        <div class="service-help">
-          <p>
-            Не уверены, какая услуга нужна?
-            <strong>Опишите задачу — разберёмся вместе.</strong>
-          </p>
-          <button class="text-link" data-callback>
-            Обсудить задачу<svg class="icon"><use href="#i-arrow" /></svg>
-          </button>
+            <div class="services-question">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat" /></svg>
+              <p>
+                Сложно определить объём?<br /><button
+                  class="text-link"
+                  data-callback
+                >
+                  Разберём вашу задачу вместе
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="service-photo">
+            <img
+              src="./assets/photos/concrete-cutting.webp"
+              width="1280"
+              height="893"
+              alt="Демонстрационная фотография резки бетонной конструкции"
+              loading="lazy"
+            />
+            <div class="photo-corner" aria-hidden="true"></div>
+          </div>
         </div>
       </section>
 
@@ -296,32 +259,23 @@
       >
         <div class="container estimate-layout">
           <div class="estimate-intro">
-            <span class="section-tag">Сначала — понятный ориентир</span>
-            <h2 id="estimate-title">Сколько стоит<br />ваша задача?</h2>
+            <p class="eyebrow">Предварительный расчёт</p>
+            <h2 id="estimate-title">Оцените работы<br />до начала ремонта.</h2>
             <p>
-              Выберите услугу и укажите размеры. Получите предварительный
-              диапазон без звонка и обязательств.
+              Укажите параметры — калькулятор покажет порядок стоимости. Телефон
+              для расчёта не нужен.
             </p>
             <div class="cost-factors">
               <h3>На стоимость влияют</h3>
               <ul>
-                <li>
-                  <svg class="icon"><use href="#i-check" /></svg>Материал и
-                  толщина конструкции
-                </li>
-                <li>
-                  <svg class="icon"><use href="#i-check" /></svg>Размеры и объём
-                  работ
-                </li>
-                <li>
-                  <svg class="icon"><use href="#i-check" /></svg>Доступ,
-                  армирование и условия объекта
-                </li>
+                <li><span>01</span>Материал и толщина конструкции</li>
+                <li><span>02</span>Размеры и объём работ</li>
+                <li><span>03</span>Доступ и условия объекта</li>
               </ul>
             </div>
             <p class="estimate-note">
-              <strong>Точная цена — после оценки объекта.</strong><br />Для
-              усиления нужен проект, поэтому универсальной цены за проём нет.
+              Усиление оцениваем индивидуально по проекту. Для остальных услуг
+              здесь показаны демонстрационные тарифы.
             </p>
           </div>
           <form
@@ -418,7 +372,8 @@
               ><output id="estimate-output">—</output>
               <p id="estimate-error" class="calculator-error" hidden></p>
               <span class="result-footnote" id="result-footnote"
-                >Пример расчёта. Это не утверждённый прайс.</span
+                >Демонстрационные тарифы. Точную стоимость определяем по
+                объекту.</span
               >
             </div>
             <button
@@ -439,171 +394,122 @@
       </section>
 
       <section
-        class="section container applications"
-        aria-labelledby="applications-title"
-      >
-        <div class="section-heading">
-          <h2 id="applications-title">Что вы планируете?</h2>
-          <p>
-            Подбираем способ работы под задачу,<br />а не задачу под инструмент.
-          </p>
-        </div>
-        <div class="application-grid">
-          <article class="application">
-            <div class="application-diagram ventilation" aria-hidden="true">
-              <div class="vent-wall"><div class="vent-hole"></div></div>
-              <span class="diagram-line"></span>
-            </div>
-            <h3>Провести коммуникации</h3>
-            <p>
-              Отверстия для вентиляции, водоснабжения, отопления и электрики в
-              стенах и перекрытиях.
-            </p>
-            <button class="text-link" data-select-estimate="drilling">
-              Рассчитать бурение<svg class="icon">
-                <use href="#i-diagonal" />
-              </svg>
-            </button>
-          </article>
-          <article class="application">
-            <div class="application-diagram doorway" aria-hidden="true">
-              <div class="door-wall"><div class="door-opening"></div></div>
-              <span class="diagram-dimension">По вашим размерам</span>
-            </div>
-            <h3>Сделать новый проём</h3>
-            <p>
-              Подготовить дверной или оконный проём. Для несущей стены
-              предварительно нужен проект.
-            </p>
-            <button class="text-link" data-select-estimate="cutting">
-              Рассчитать резку<svg class="icon"><use href="#i-diagonal" /></svg>
-            </button>
-          </article>
-          <article class="application">
-            <div class="application-diagram space" aria-hidden="true">
-              <div class="room-back"></div>
-              <div class="room-side"></div>
-              <div class="room-cut"></div>
-              <span class="diagram-line"></span>
-            </div>
-            <h3>Подготовить помещение</h3>
-            <p>
-              Убрать ненужные перегородки и конструкции перед ремонтом квартиры
-              или коммерческого объекта.
-            </p>
-            <button class="text-link" data-select-estimate="demolition">
-              Рассчитать демонтаж<svg class="icon">
-                <use href="#i-diagonal" />
-              </svg>
-            </button>
-          </article>
-        </div>
-        <p class="illustration-note">
-          Иллюстрации показывают типовые задачи, а не выполненные объекты
-          компании.
-        </p>
-      </section>
-
-      <section
         id="process"
-        class="process-section"
+        class="section process-section container"
         aria-labelledby="process-title"
       >
-        <div class="container">
-          <div class="section-heading">
-            <h2 id="process-title">
-              От задачи до результата.<br />Без недосказанности.
-            </h2>
-            <p>
-              Обсуждаем не только рез и отверстия,<br />но и то, что важно
-              вокруг них.
+        <div class="process-top">
+          <div>
+            <p class="eyebrow">Порядок работы</p>
+            <h2 id="process-title">Сначала договоримся.<br />Потом начнём.</h2>
+            <p class="process-intro">
+              Чтобы результат соответствовал задаче, обсуждаем не только
+              размеры. Доступ, отделка, вода, шум и уборка тоже имеют значение.
             </p>
           </div>
-          <ol class="process-list">
-            <li>
-              <span class="step-number">01</span>
-              <h3>Знакомимся с задачей</h3>
-              <p>
-                Вы рассказываете, что нужно сделать. Уточняем размеры, материал
-                и расположение объекта.
-              </p>
-            </li>
-            <li>
-              <span class="step-number">02</span>
-              <h3>Согласуем условия</h3>
-              <p>
-                Оцениваем объём, доступ и подготовку. Обсуждаем стоимость, сроки
-                и необходимость проекта.
-              </p>
-            </li>
-            <li>
-              <span class="step-number">03</span>
-              <h3>Выполняем работу</h3>
-              <p>
-                Размечаем конструкцию, подготавливаем рабочую зону и выполняем
-                согласованный объём.
-              </p>
-            </li>
-            <li>
-              <span class="step-number">04</span>
-              <h3>Принимаем результат</h3>
-              <p>
-                Проверяем размеры вместе с вами. Порядок уборки и вывоза мусора
-                согласуем заранее.
-              </p>
-            </li>
-          </ol>
-          <div class="process-callout">
-            <svg class="icon"><use href="#i-check" /></svg>
+          <div class="process-photo">
+            <img
+              src="./assets/photos/concrete-detail.webp"
+              width="1280"
+              height="852"
+              alt="Фактура и кромка бетонной конструкции, демонстрационная фотография"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <ol class="process-list">
+          <li>
+            <span class="step-number">01</span>
+            <h3>Разберём задачу</h3>
             <p>
-              Отделка, пыль, вода и шум — тоже часть обсуждения.
-              <strong>Учитываем условия до начала работ.</strong>
+              Уточним, что нужно сделать, из какого материала конструкция и где
+              находится объект.
             </p>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <h3>Согласуем условия</h3>
+            <p>
+              Обсудим объём, стоимость, сроки и подготовку. Для несущих
+              конструкций — проект и согласования.
+            </p>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <h3>Выполним работы</h3>
+            <p>
+              Подготовим зону и разметку. Выполним согласованный объём с учётом
+              условий объекта.
+            </p>
+          </li>
+          <li>
+            <span class="step-number">04</span>
+            <h3>Проверим результат</h3>
+            <p>
+              Вместе проверим размеры. Уборку, перенос и вывоз мусора обсуждаем
+              заранее.
+            </p>
+          </li>
+        </ol>
+        <div class="process-callout">
+          <span class="location-dot"></span>
+          <p>
+            Новый проём в несущей стене — только после оценки конструкции и
+            подготовки проекта.
+          </p>
+        </div>
+      </section>
+
+      <section id="local" class="local-section" aria-labelledby="local-title">
+        <div class="container local-layout">
+          <div class="local-copy">
+            <p class="eyebrow">Наш город</p>
+            <h2 id="local-title">
+              Красноярск.<br />Ваш район —<br />наша зона работ.
+            </h2>
+            <p>
+              Частные и коммерческие объекты на обоих берегах Енисея. Время и
+              условия выезда согласуем под вашу задачу.
+            </p>
+            <div class="districts">
+              <span>Центральный</span><span>Советский</span
+              ><span>Железнодорожный</span><span>Октябрьский</span
+              ><span>Свердловский</span><span>Кировский</span
+              ><span>Ленинский</span>
+            </div>
+            <a class="text-link" href="#contact"
+              >Обсудить ваш объект<svg class="icon" aria-hidden="true">
+                <use href="#i-arrow" /></svg
+            ></a>
+          </div>
+          <div class="local-photo">
+            <img
+              src="./assets/photos/krasnoyarsk.webp"
+              width="1280"
+              height="854"
+              alt="Панорама Красноярска с Караульной горы"
+              loading="lazy"
+            /><span class="local-photo-word" aria-hidden="true"
+              >КРАСНОЯРСК</span
+            >
           </div>
         </div>
       </section>
 
       <section
-        class="section container local-section"
-        aria-labelledby="local-title"
+        class="section faq-section container"
+        aria-labelledby="faq-title"
       >
-        <div class="local-copy">
-          <p class="location">
-            <svg class="icon"><use href="#i-pin" /></svg>Работаем в вашем городе
-          </p>
-          <h2 id="local-title">Красноярск.<br />Оба берега Енисея.</h2>
-          <p>
-            Выезжаем на частные и коммерческие объекты во всех районах города.
-            Время и условия выезда обсуждаем под вашу задачу.
-          </p>
-          <div class="districts">
-            <span>Центральный</span><span>Советский</span
-            ><span>Железнодорожный</span><span>Октябрьский</span
-            ><span>Свердловский</span><span>Кировский</span
-            ><span>Ленинский</span>
-          </div>
-          <a class="text-link" href="#contact"
-            >Обсудить ваш объект<svg class="icon">
-              <use href="#i-diagonal" /></svg
-          ></a>
-        </div>
-        <div class="city-visual">
-          <img
-            src="./assets/city-map.svg"
-            width="600"
-            height="380"
-            alt="Условная схема Красноярска с семью районами на обоих берегах Енисея"
-            loading="lazy"
-          />
-        </div>
-      </section>
-
-      <section class="faq-section container" aria-labelledby="faq-title">
         <div>
-          <h2 id="faq-title">Есть вопросы?<br />Это нормально.</h2>
-          <p>Здесь — ответы на то, что чаще всего важно перед началом работ.</p>
+          <p class="eyebrow">Перед началом работ</p>
+          <h2 id="faq-title">Что важно<br />знать заранее.</h2>
+          <p>
+            Ответы на вопросы о расчёте, подготовке и работе с конструкциями.
+          </p>
           <button class="text-link" data-callback>
-            Задать свой вопрос<svg class="icon"><use href="#i-diagonal" /></svg>
+            Задать свой вопрос<svg class="icon" aria-hidden="true">
+              <use href="#i-diagonal" />
+            </svg>
           </button>
         </div>
         <div class="faq-list">
@@ -688,24 +594,26 @@
       >
         <div class="container contact-layout">
           <div class="contact-copy">
-            <span class="section-tag">Начнём с вашей задачи</span>
-            <h2 id="contact-title">Нужен точный срез?<br />Давайте обсудим.</h2>
+            <p class="eyebrow">Начнём с вашей задачи</p>
+            <h2 id="contact-title">
+              Есть задача<br />по бетону?<br />Обсудим.
+            </h2>
             <p>
-              Расскажите, что хотите сделать. Для начала достаточно размеров и
-              короткого описания.
+              Напишите, что нужно сделать.<br />Размеры и короткое описание —
+              хорошее начало.
             </p>
             <div class="contact-area">
-              <svg class="icon"><use href="#i-pin" /></svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg>
               <div>
                 <strong>Красноярск</strong
-                ><span>Частные и коммерческие объекты</span>
+                ><span>Частные клиенты и подрядчики</span>
               </div>
             </div>
             <div class="contact-demo">
               <span class="demo-tag">Демонстрационная версия</span>
               <p>
-                Телефон и мессенджеры появятся при запуске.<br />Сейчас можно
-                посмотреть, как устроена заявка.
+                Телефон и мессенджеры подключим перед запуском. Сейчас можно
+                проверить форму заявки.
               </p>
             </div>
           </div>
@@ -763,7 +671,7 @@
               ></label
             >
             <p class="form-error" role="alert" hidden></p>
-            <button class="button button-orange" type="submit">
+            <button class="button button-dark" type="submit">
               Подготовить заявку<svg class="icon"><use href="#i-arrow" /></svg>
             </button>
             <p class="form-demo-note">
@@ -777,37 +685,38 @@
     <footer class="footer">
       <div class="container footer-main">
         <a class="brand" href="#" aria-label="БУРКРАС — на главную"
-          ><img src="./assets/logo.svg" width="40" height="40" alt="" /><span
+          ><img src="./assets/logo.svg?v=2" width="44" height="44" alt="" /><span
             class="brand-name"
-            >БУРКРАС<span class="brand-descriptor"
-              >Точная работа с бетоном</span
-            ></span
+            >БУРКРАС</span
           ></a
         >
-        <p>
-          Бурение. Резка. Усиление. Демонтаж.<br />Красноярск, все районы
-          города.
-        </p>
+        <p>Алмазная работа с бетоном.<br />Красноярск, все районы города.</p>
         <a href="./privacy.html">Обработка данных</a
         ><a href="#estimate"
-          >Расчёт стоимости<svg class="icon"><use href="#i-diagonal" /></svg
+          >Расчёт стоимости<svg class="icon" aria-hidden="true">
+            <use href="#i-diagonal" /></svg
         ></a>
       </div>
       <div class="container footer-bottom">
         <span>© <span id="copyright-year">2026</span> БУРКРАС</span
-        ><span>Демо-проект. Цены примерные, заявки не отправляются.</span
+        ><span>Демо. Цены примерные, заявки не отправляются.</span
+        ><a href="./credits.html">Фото и лицензии</a
         ><a
           href="https://github.com/sigabu/BURKRAS"
           target="_blank"
           rel="noopener"
-          >Проект на GitHub</a
+          >GitHub</a
         >
       </div>
+      <p class="container photo-disclosure">
+        Фотографии — лицензированные изображения рабочих процессов для
+        демонстрации, не портфолио компании.
+      </p>
     </footer>
     <a class="mobile-estimate" href="#estimate"
-      >Рассчитать стоимость<svg class="icon"><use href="#i-arrow" /></svg
+      >Рассчитать стоимость<svg class="icon" aria-hidden="true">
+        <use href="#i-arrow" /></svg
     ></a>
-
     <dialog
       id="service-dialog"
       class="dialog service-dialog"
@@ -921,10 +830,11 @@
         Вернуться на сайт
       </button>
     </dialog>
+
     <noscript
       ><div class="noscript">
-        Для интерактивного расчёта и демонстрации форм включите JavaScript.
-        Описания услуг и порядок работ доступны ниже.
+        Для расчёта и демонстрации форм включите JavaScript. Описания услуг
+        доступны на странице.
       </div></noscript
     >
   </body>

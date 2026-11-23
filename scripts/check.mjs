@@ -33,12 +33,13 @@ for (const filename of files) {
   for (const ref of references) {
     if (/^(https?:|data:|mailto:|tel:)/.test(ref) || ref === "#") continue;
     const [relative, hash] = ref.split("#");
+    const relativePath = relative.split("?")[0];
     if (relative.startsWith("/")) {
       failures.push(`Root-relative URL breaks project Pages: ${ref}`);
       continue;
     }
-    const destination = relative
-      ? path.resolve(path.dirname(filename), decodeURIComponent(relative))
+    const destination = relativePath
+      ? path.resolve(path.dirname(filename), decodeURIComponent(relativePath))
       : filename;
     try {
       await stat(destination);

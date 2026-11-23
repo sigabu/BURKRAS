@@ -12,6 +12,7 @@ const types = {
   ".ttf": "font/ttf",
   ".txt": "text/plain; charset=utf-8",
   ".png": "image/png",
+  ".webp": "image/webp",
 };
 const server = http.createServer(async (request, response) => {
   try {
