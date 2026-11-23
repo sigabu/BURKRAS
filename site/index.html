@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="ru" data-design="industrial-photo">
+<html lang="ru" data-design="siberia-yenisei">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#171f23" />
+    <meta name="theme-color" content="#1e3c61" />
     <meta
       name="description"
       content="БУРКРАС — алмазное бурение, резка бетона, усиление проёмов и демонтаж в Красноярске. Предварительный расчёт и понятный порядок работ."
@@ -24,7 +24,7 @@
       content="https://sigabu.github.io/BURKRAS/assets/photos/drilling-hero.webp"
     />
     <title>БУРКРАС — алмазное бурение и резка бетона в Красноярске</title>
-    <link rel="icon" href="./assets/logo.svg?v=2" type="image/svg+xml" />
+    <link rel="icon" href="./assets/logo.svg?v=3" type="image/svg+xml" />
     <link
       rel="preload"
       href="./assets/fonts/oswald-variable.ttf"
@@ -39,8 +39,8 @@
       type="font/ttf"
       crossorigin
     />
-    <link rel="stylesheet" href="./assets/styles.css?v=2" />
-    <script type="module" src="./assets/app.js"></script>
+    <link rel="stylesheet" href="./assets/styles.css?v=3" />
+    <script type="module" src="./assets/app.js?v=3"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержимому</a>
@@ -71,9 +71,15 @@
     <header class="header">
       <div class="container header-inner">
         <a class="brand" href="#" aria-label="БУРКРАС — на главную"
-          ><img src="./assets/logo.svg?v=2" width="44" height="44" alt="" /><span
-            class="brand-name"
-            >БУРКРАС</span
+          ><img
+            src="./assets/logo.svg?v=3"
+            width="44"
+            height="44"
+            alt=""
+          /><span class="brand-name"
+            >БУРКРАС<span class="brand-descriptor"
+              >Сибирь / Красноярск</span
+            ></span
           ></a
         >
         <nav class="desktop-nav" aria-label="Основная навигация">
@@ -103,7 +109,7 @@
       >
         <a href="#services">Услуги</a><a href="#estimate">Стоимость</a
         ><a href="#process">Как работаем</a><a href="#contact">Контакты</a
-        ><button class="button button-orange" data-callback>
+        ><button class="button button-primary" data-callback>
           Обсудить задачу</button
         ><span>Красноярск, все районы</span>
       </nav>
@@ -113,7 +119,7 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-photo">
           <img
-            src="./assets/photos/drilling-hero.webp"
+            src="./assets/photos/drilling-hero.webp?v=3"
             width="1280"
             height="903"
             alt="Демонстрационная фотография работы с алмазной бурильной установкой"
@@ -123,16 +129,20 @@
         <div class="container hero-content">
           <div class="hero-copy">
             <p class="hero-location">
-              <span class="location-dot"></span>Красноярск. Работаем на обоих
-              берегах.
+              <span class="location-dot"></span>Сибирь. Красноярск. Оба берега
+              Енисея.
             </p>
-            <h1 id="hero-title">Алмазное<br />бурение<br />и резка бетона</h1>
+            <h1 id="hero-title">
+              Алмазное<br />бурение<br />и резка бетона<span class="hero-city"
+                >в Красноярске</span
+              >
+            </h1>
             <p class="hero-description">
               От отверстия под коммуникации до нового проёма. Согласуем задачу,
               размеры и условия до начала работ.
             </p>
             <div class="hero-actions">
-              <a class="button button-orange" href="#estimate"
+              <a class="button button-primary" href="#estimate"
                 >Рассчитать стоимость<svg class="icon" aria-hidden="true">
                   <use href="#i-arrow" /></svg></a
               ><a class="hero-secondary" href="#services"
@@ -145,7 +155,7 @@
             <span>Бетон</span><span>Железобетон</span><span>Кирпич</span>
           </div>
           <div class="hero-bottom">
-            <p>Одна команда.<br />Четыре направления.</p>
+            <p>Красноярская команда.<br />Четыре направления.</p>
             <a href="#services"
               >Бурение<svg class="icon" aria-hidden="true">
                 <use href="#i-diagonal" /></svg></a
@@ -241,7 +251,7 @@
           </div>
           <div class="service-photo">
             <img
-              src="./assets/photos/concrete-cutting.webp"
+              src="./assets/photos/concrete-cutting.webp?v=3"
               width="1280"
               height="893"
               alt="Демонстрационная фотография резки бетонной конструкции"
@@ -355,7 +365,7 @@
             </div>
             <div class="individual-note" id="individual-note" hidden>
               <img
-                src="./assets/service-reinforcement.svg"
+                src="./assets/service-reinforcement.svg?v=3"
                 width="180"
                 height="96"
                 alt=""
@@ -377,7 +387,7 @@
               >
             </div>
             <button
-              class="button button-orange calculator-submit"
+              class="button button-primary calculator-submit"
               type="button"
               id="estimate-request"
             >
@@ -409,7 +419,7 @@
           </div>
           <div class="process-photo">
             <img
-              src="./assets/photos/concrete-detail.webp"
+              src="./assets/photos/concrete-detail.webp?v=3"
               width="1280"
               height="852"
               alt="Фактура и кромка бетонной конструкции, демонстрационная фотография"
@@ -465,7 +475,7 @@
           <div class="local-copy">
             <p class="eyebrow">Наш город</p>
             <h2 id="local-title">
-              Красноярск.<br />Ваш район —<br />наша зона работ.
+              Красноярск.<br />Два берега.<br />Одна команда.
             </h2>
             <p>
               Частные и коммерческие объекты на обоих берегах Енисея. Время и
@@ -482,9 +492,17 @@
                 <use href="#i-arrow" /></svg
             ></a>
           </div>
-          <div class="local-photo">
+          <div class="local-photo regional-gallery">
             <img
-              src="./assets/photos/krasnoyarsk.webp"
+              class="bridge-photo"
+              src="./assets/photos/kommunalny-bridge.webp?v=3"
+              width="1280"
+              height="960"
+              alt="Коммунальный мост через Енисей в Красноярске"
+              loading="lazy"
+            />
+            <img
+              src="./assets/photos/krasnoyarsk.webp?v=3"
               width="1280"
               height="854"
               alt="Панорама Красноярска с Караульной горы"
@@ -685,9 +703,15 @@
     <footer class="footer">
       <div class="container footer-main">
         <a class="brand" href="#" aria-label="БУРКРАС — на главную"
-          ><img src="./assets/logo.svg?v=2" width="44" height="44" alt="" /><span
-            class="brand-name"
-            >БУРКРАС</span
+          ><img
+            src="./assets/logo.svg?v=3"
+            width="44"
+            height="44"
+            alt=""
+          /><span class="brand-name"
+            >БУРКРАС<span class="brand-descriptor"
+              >Сибирь / Красноярск</span
+            ></span
           ></a
         >
         <p>Алмазная работа с бетоном.<br />Красноярск, все районы города.</p>
@@ -730,7 +754,7 @@
         <svg class="icon"><use href="#i-close" /></svg></button
       ><img
         id="service-dialog-image"
-        src="./assets/service-drilling.svg"
+        src="./assets/service-drilling.svg?v=3"
         width="300"
         height="160"
         alt=""
@@ -740,7 +764,7 @@
       <h3>Что уточним перед работой</h3>
       <ul id="service-dialog-list"></ul>
       <p id="service-dialog-note" class="dialog-note"></p>
-      <button class="button button-orange" id="service-dialog-calculate">
+      <button class="button button-primary" id="service-dialog-calculate">
         Перейти к расчёту<svg class="icon"><use href="#i-arrow" /></svg>
       </button>
     </dialog>
@@ -798,7 +822,7 @@
           ></label
         >
         <p class="form-error" role="alert" hidden></p>
-        <button class="button button-orange" type="submit">
+        <button class="button button-primary" type="submit">
           Подготовить заявку<svg class="icon"><use href="#i-arrow" /></svg>
         </button>
         <p class="form-demo-note">Данные не отправляются и не сохраняются.</p>

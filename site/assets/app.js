@@ -223,7 +223,7 @@ document.querySelectorAll("[data-service]").forEach((button) =>
     $("#service-dialog-title").textContent = serviceNames[dialogService];
     $("#service-dialog-description").textContent = detail.description;
     $("#service-dialog-image").src =
-      `./assets/service-${{ drilling: "drilling", cutting: "cutting", reinforcement: "reinforcement", demolition: "demolition" }[dialogService]}.svg`;
+      `./assets/service-${{ drilling: "drilling", cutting: "cutting", reinforcement: "reinforcement", demolition: "demolition" }[dialogService]}.svg?v=3`;
     $("#service-dialog-list").replaceChildren(
       ...detail.questions.map((question) => {
         const li = document.createElement("li");

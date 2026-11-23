@@ -11,12 +11,14 @@
   font-display: swap;
 }
 :root {
-  --ink: #171f23;
+  --ink: #1e3c61;
   --paper: #fff;
-  --surface: #f0f1ec;
-  --orange: #f57136;
-  --steel: #586269;
-  --line: #d8dcd8;
+  --surface: #edf4f8;
+  --accent: #008acb;
+  --action: #0078b3;
+  --ice: #73d2f3;
+  --steel: #526c81;
+  --line: #d4e1ea;
   --font: Onest, Arial, sans-serif;
   --display: Oswald, Arial, sans-serif;
   --ease: cubic-bezier(0.2, 0.75, 0.25, 1);
@@ -101,7 +103,7 @@ button:disabled {
   display: none !important;
 }
 ::selection {
-  background: var(--orange);
+  background: var(--accent);
   color: var(--ink);
 }
 .container {
@@ -142,7 +144,7 @@ button:disabled {
   display: block;
   width: 22px;
   height: 2px;
-  background: var(--orange);
+  background: var(--accent);
 }
 .section-heading {
   display: flex;
@@ -180,12 +182,12 @@ button:disabled {
 .button:active {
   transform: translateY(0);
 }
-.button-orange {
-  background: var(--orange);
+.button-primary {
+  background: var(--accent);
   color: var(--ink);
 }
-.button-orange:hover {
-  background: #ff8954;
+.button-primary:hover {
+  background: #0078b3;
 }
 .button-dark {
   background: var(--ink);
@@ -218,7 +220,7 @@ button:disabled {
   transition: color 0.2s;
 }
 .text-link:hover {
-  color: #b84610;
+  color: #006e9d;
 }
 .text-link .icon {
   transition: transform 0.2s;
@@ -231,7 +233,7 @@ button:disabled {
   top: 12px;
   left: 16px;
   z-index: 110;
-  background: var(--orange);
+  background: var(--accent);
   color: var(--ink);
   padding: 12px 20px;
   transform: translateY(-160%);
@@ -242,13 +244,13 @@ button:disabled {
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible {
-  outline: 3px solid var(--orange);
+  outline: 3px solid var(--accent);
   outline-offset: 5px;
 }
 input:focus-visible,
 select:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid var(--orange);
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
 /* A photographic industrial opening, with one dominant action. */
@@ -301,7 +303,7 @@ textarea:focus-visible {
 .desktop-nav a::after {
   content: "";
   height: 1px;
-  background: var(--orange);
+  background: var(--accent);
   position: absolute;
   left: 0;
   right: 0;
@@ -326,7 +328,7 @@ textarea:focus-visible {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--orange);
+  background: var(--accent);
   flex-shrink: 0;
 }
 .header-cta {
@@ -371,11 +373,11 @@ textarea:focus-visible {
     linear-gradient(
       90deg,
       var(--ink) 15%,
-      #171f23f5 31%,
-      #171f23a6 48%,
-      #171f2315 73%
+      #1e3c61f5 31%,
+      #1e3c61a6 48%,
+      #1e3c6115 73%
     ),
-    linear-gradient(0deg, #171f23eb 0%, transparent 30%);
+    linear-gradient(0deg, #1e3c61eb 0%, transparent 30%);
 }
 .hero-content {
   position: relative;
@@ -427,7 +429,7 @@ textarea:focus-visible {
   color: #e4e8e9;
 }
 .hero-secondary:hover {
-  color: var(--orange);
+  color: var(--accent);
 }
 .hero-secondary .icon {
   width: 18px;
@@ -446,7 +448,7 @@ textarea:focus-visible {
 }
 .hero-side-note > span {
   padding: 4px 9px;
-  background: #171f23a1;
+  background: #1e3c61a1;
   backdrop-filter: blur(4px);
 }
 .hero-bottom {
@@ -475,10 +477,10 @@ textarea:focus-visible {
 .hero-bottom .icon {
   width: 17px;
   height: 17px;
-  color: var(--orange);
+  color: var(--accent);
 }
 .hero-bottom > a:hover {
-  color: var(--orange);
+  color: var(--accent);
 }
 /* Services use an open list instead of a repeated card grid. */
 .services-layout {
@@ -534,12 +536,12 @@ textarea:focus-visible {
     border-color 0.2s;
 }
 .service-row:hover .service-arrow {
-  background: var(--orange);
-  border-color: var(--orange);
+  background: var(--accent);
+  border-color: var(--accent);
   transform: rotate(45deg);
 }
 .service-row:hover strong {
-  color: #ad461a;
+  color: #006e9d;
 }
 .service-photo {
   overflow: hidden;
@@ -556,7 +558,7 @@ textarea:focus-visible {
   position: absolute;
   bottom: 0;
   right: 0;
-  border-bottom: 50px solid var(--orange);
+  border-bottom: 50px solid var(--accent);
   border-left: 50px solid transparent;
 }
 .services-question {
@@ -567,7 +569,7 @@ textarea:focus-visible {
   padding-top: 25px;
 }
 .services-question > .icon {
-  color: #a2491e;
+  color: #006e9d;
 }
 .services-question p {
   font-size: 14px;
@@ -684,7 +686,7 @@ textarea:focus-visible {
   color: white;
 }
 .service-options input:focus-visible + span {
-  outline: 2px solid var(--orange);
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
 .field {
@@ -704,7 +706,7 @@ textarea:focus-visible {
   width: 100%;
   min-width: 0;
   min-height: 51px;
-  background: #f7f8f4;
+  background: #f3f7fa;
   padding: 12px 14px;
   border: 1px solid #dce1da;
   border-radius: 3px;
@@ -757,7 +759,7 @@ textarea:focus-visible {
   letter-spacing: -0.03em;
   margin-block: 8px 5px;
   font-weight: 500;
-  color: var(--orange);
+  color: var(--accent);
   font-variant-numeric: tabular-nums;
 }
 .result-footnote {
@@ -922,7 +924,7 @@ textarea:focus-visible {
   font-size: 14px;
 }
 .local-copy .text-link:hover {
-  color: var(--orange);
+  color: var(--accent);
 }
 .local-photo {
   height: 475px;
@@ -939,7 +941,7 @@ textarea:focus-visible {
   content: "";
   position: absolute;
   inset: 55% 0 0;
-  background: linear-gradient(0deg, #171f23bc, transparent);
+  background: linear-gradient(0deg, #1e3c61bc, transparent);
 }
 .local-photo-word {
   position: absolute;
@@ -999,7 +1001,7 @@ textarea:focus-visible {
 }
 .faq-list details[open] summary > span {
   transform: rotate(45deg);
-  color: #b84616;
+  color: #006e9d;
 }
 .faq-list details > p {
   padding: 0 18px 25px 0;
@@ -1008,7 +1010,7 @@ textarea:focus-visible {
 }
 /* One broad brand band closes the page. */
 .contact-section {
-  background: var(--orange);
+  background: var(--accent);
   padding-block: 82px;
 }
 .contact-layout {
@@ -1055,7 +1057,7 @@ textarea:focus-visible {
   color: #47342a;
 }
 .contact-demo {
-  border-top: 1px solid #171f2340;
+  border-top: 1px solid #1e3c6140;
   margin-top: 36px;
   padding-top: 25px;
   max-width: 395px;
@@ -1137,7 +1139,7 @@ textarea:focus-visible {
   position: absolute;
   top: 0;
   left: 66px;
-  color: #b84616;
+  color: #006e9d;
 }
 .lead-form .button {
   width: 100%;
@@ -1186,7 +1188,7 @@ textarea:focus-visible {
   min-height: 44px;
 }
 .footer-main > a:not(.brand):hover {
-  color: var(--orange);
+  color: var(--accent);
 }
 .footer-main .icon {
   width: 18px;
@@ -1241,7 +1243,7 @@ textarea:focus-visible {
   right: 15px;
   top: 15px;
   border: 0;
-  background: #f0f2ed;
+  background: #eef5f9;
   border-radius: 50%;
   width: 38px;
   height: 38px;
@@ -1250,7 +1252,7 @@ textarea:focus-visible {
   transition: background 0.2s;
 }
 .dialog-close:hover {
-  background: #f9ceb9;
+  background: #caeaf9;
 }
 .dialog-close .icon {
   height: 20px;
@@ -1260,7 +1262,7 @@ textarea:focus-visible {
   width: 100%;
   height: 130px;
   object-fit: contain;
-  background: #f1f3ee;
+  background: #eef5f9;
   margin: 18px auto 24px;
   border-radius: 5px;
 }
@@ -1284,7 +1286,7 @@ textarea:focus-visible {
   padding-left: 19px;
 }
 .dialog .dialog-note {
-  background: #f0f2ee;
+  background: #eef5f9;
   padding: 14px;
   font-size: 12px;
   line-height: 1.8;
@@ -1309,11 +1311,11 @@ textarea:focus-visible {
   height: 65px;
   width: 65px;
   border-radius: 50%;
-  background: #ffede1;
+  background: #e0f4fc;
   display: grid;
   place-items: center;
   margin: 0 auto 26px;
-  color: #b74716;
+  color: #0078b3;
 }
 .success-mark .icon {
   height: 30px;
@@ -1340,7 +1342,7 @@ textarea:focus-visible {
   margin-bottom: 15px;
 }
 .legal-page p a {
-  color: #a13d0d;
+  color: #006e9d;
   text-decoration: underline;
 }
 .legal-page > .button {
@@ -1540,11 +1542,11 @@ textarea:focus-visible {
       linear-gradient(
         90deg,
         var(--ink) 0%,
-        #171f23d9 32%,
-        #171f238a 52%,
-        #171f2340 85%
+        #1e3c61d9 32%,
+        #1e3c618a 52%,
+        #1e3c6140 85%
       ),
-      linear-gradient(0deg, #171f23ef 0%, transparent 35%);
+      linear-gradient(0deg, #1e3c61ef 0%, transparent 35%);
   }
   .hero-side-note {
     display: none;
@@ -1771,7 +1773,7 @@ textarea:focus-visible {
   }
   .hero::after {
     background:
-      linear-gradient(90deg, #171f23f0 0%, #171f23b8 40%, #171f233d 100%),
+      linear-gradient(90deg, #1e3c61f0 0%, #1e3c61b8 40%, #1e3c613d 100%),
       linear-gradient(0deg, var(--ink), transparent 55%);
   }
   .hero-location {
@@ -2179,7 +2181,7 @@ textarea:focus-visible {
     left: 0;
     right: 0;
     z-index: 35;
-    background: var(--orange);
+    background: var(--accent);
     color: var(--ink);
     display: flex;
     align-items: center;
@@ -2188,7 +2190,7 @@ textarea:focus-visible {
     font-weight: 600;
     padding: 15px 22px calc(15px + env(safe-area-inset-bottom));
     border-top: 1px solid #dc5c23;
-    box-shadow: 0 -3px 15px #171f2315;
+    box-shadow: 0 -3px 15px #1e3c6115;
   }
   .dialog {
     padding: 30px 24px;
@@ -2375,4 +2377,135 @@ textarea:focus-visible {
 .dialog-close {
   width: 44px;
   height: 44px;
+}
+
+/* Yenisei palette: ensib.ru informs colour, Krasnoyarsk informs our own mark. */
+.button-primary,
+.mobile-estimate {
+  background: var(--action);
+  color: white;
+}
+.button-primary:hover {
+  background: #00679d;
+}
+.brand-descriptor {
+  display: block;
+  font-family: var(--font);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  margin-top: 7px;
+  color: var(--ice);
+  text-transform: uppercase;
+}
+.hero-location {
+  color: #c4e7f6;
+  font-size: 13px;
+}
+.hero-city {
+  display: block;
+  font-size: 35px;
+  line-height: 1.25;
+  margin-top: 17px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: var(--ice);
+  text-transform: none;
+}
+.hero-bottom .icon,
+.estimate-result output {
+  color: var(--ice);
+}
+.hero-secondary:hover,
+.hero-bottom > a:hover,
+.local-copy .text-link:hover,
+.footer-main > a:not(.brand):hover {
+  color: var(--ice);
+}
+.service-row:hover .service-arrow {
+  color: white;
+}
+.step-number {
+  color: #6c879d;
+}
+.contact-section {
+  background: var(--action);
+  color: white;
+}
+.contact-copy .eyebrow,
+.contact-copy > p,
+.contact-area span,
+.contact-demo p,
+.contact-demo .demo-tag {
+  color: white;
+}
+.contact-copy .eyebrow::before {
+  background: var(--ice);
+}
+.contact-demo {
+  border-top-color: #ffffff50;
+}
+.contact-demo .demo-tag {
+  border-color: #ffffff85;
+}
+.contact-copy .contact-area {
+  color: white;
+}
+.regional-gallery {
+  display: grid;
+  grid-template-rows: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 10px;
+  height: 520px;
+  background: transparent;
+}
+.regional-gallery img {
+  min-height: 0;
+  object-position: center;
+}
+.regional-gallery .bridge-photo {
+  object-position: center 43%;
+}
+.regional-gallery::after {
+  top: 61%;
+}
+@media (max-width: 950px) {
+  .brand-descriptor {
+    font-size: 9px;
+  }
+  .hero-city {
+    font-size: 31px;
+  }
+  .regional-gallery {
+    height: 460px;
+  }
+}
+@media (max-width: 700px) {
+  .brand-descriptor {
+    font-size: 9px;
+    letter-spacing: 0.06em;
+    margin-top: 5px;
+  }
+  .hero-city {
+    font-size: 27px;
+    margin-top: 15px;
+  }
+  .hero-location {
+    font-size: 11px;
+  }
+  .regional-gallery {
+    height: 385px;
+    gap: 8px;
+  }
+}
+@media (max-width: 380px) {
+  .brand-descriptor {
+    font-size: 8px;
+  }
+  .hero-city {
+    font-size: 25px;
+  }
+  .hero-location {
+    font-size: 10px;
+  }
 }
